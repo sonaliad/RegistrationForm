@@ -1,0 +1,354 @@
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype')
+}
+
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype')
+}
+
+body {
+  background: url("../images/bg-intro-mobile.png"), #6B717B;
+  background-size: cover;
+  margin: 4.2rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* Base Styles */
+/* =========== */
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.7rem;
+  line-height: 2.313rem;
+}
+
+a {
+  color: #ff7a7a;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Introduction Component Styles */
+/* ============================= */
+
+.intro {
+  line-height: 1.7rem;
+  max-width: 32rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+.text-success {
+  /* color: #3c763d; */
+  color: #1D8156
+}
+
+/* Form Styles */
+/* =========== */
+
+form {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: stretch;
+  background: #ffffff;
+  padding: 1.5rem 0;
+  border-radius: 10px;
+  margin-top: 1.3rem;
+  box-shadow: 0 8px 1px 0 #00000026;
+}
+
+form > * + * {
+  margin-top: 2.3rem;
+}
+
+.form-control {
+  display: inherit;
+  margin-bottom: -24px;
+  flex-flow: column;
+  position: relative
+}
+
+.form-control span{
+  position: absolute;
+  top:25%;
+  right: 8%;
+}
+
+input {
+  margin: 0 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+}
+
+input:hover {
+  border: 1px solid #6055a5;
+}
+
+button {
+  background-color: #7368BB;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: .03em;
+  box-shadow: 0 5px 1px 0 #5e53a3;
+  border: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2.3rem 1rem -1.5rem 1rem;
+}
+
+button:hover {
+  background-color: #78e2b4;
+  box-shadow: 0 3px 1px 0 #8cd4b5;
+}
+
+button:active {
+  background-color: #78e2b4;
+  box-shadow: 0 3px 1px 0 #8cd4b5;
+}
+
+.form-agreement {
+  font-size: .7rem;
+  font-weight: 500;
+  color: #b9b6d3;
+  padding: 0 2.5rem;
+  line-height: 1.313rem;
+}
+
+.form-agreement p {
+  margin: 0;
+}
+
+.list-unstyled {
+  list-style: none;
+  text-align: left !important;
+  padding-inline-start: 4%;
+  color: black;
+}
+
+
+/* Form Invalid Input Styles */
+/* ========================= */
+
+.form-control.error input {
+  border: 3px solid #ff7a7a;
+  color: #ff7a7a;
+  position: relative;
+  padding-right: 0;
+}
+
+.form-control small {
+  text-align: right;
+  position: inherit;
+  color: #ff7a7a;
+  font-weight: 600;
+  font-style: italic;
+  font-size: .7rem;
+  display: none;
+  margin: -20px 40px 10px 0;
+}
+
+.form-control.error small {
+  display: block;
+  margin: 4px 21px 0 0;
+}
+
+input:invalid {
+  background-color: #ffc2cc;
+}
+
+/* Solution Attribution Styles */
+/* =========================== */
+
+footer {
+  width: 100%;
+}
+.attribution {
+  font-weight: 500;
+}
+
+.attribution a {
+  color: #ffffff;
+
+}
+
+.fa-eye{
+  color: #022255;
+  cursor: pointer;
+}
+.fa-file-text {
+  color: #edda39;
+  text-align: left !important;
+}
+
+
+
+/* Desktop View */
+/* ============ */
+@media only screen and (min-width:961px) {
+  body {
+    background: url("../images/bg-intro-desktop.png"), #6B717B;
+    height: 98vh;
+    justify-content: center;
+    margin: unset;
+  }
+
+  /* Base Styles */
+  /* =========== */
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Intro Component Styles */
+  /* ======================= */
+
+  .intro {
+    text-align: left;
+    max-width: 35.5rem;
+    margin-top: 5.1rem;
+    margin-right: 10rem;
+  }
+
+  /* Call to Action Styles */
+  /* ====================== */
+
+  .signup-form {
+    margin-top: 6.3rem;
+    margin-right: 2rem;
+    width: 37.5%;
+    max-width: 580px;
+  }
+
+
+
+  form {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2.5rem 2.8rem 2.5rem 2.4rem;
+    margin: 1.5rem 0;
+  }
+
+  .form-control input {
+    padding: 1rem 2rem;
+  }
+
+  input {
+    margin: unset;
+  }
+
+  input:focus {
+    border: 1px solid #6055a5;
+  }
+
+  button {
+    margin: 2.3rem 0 0 0;
+    border-radius: 5px;
+    letter-spacing: .1ch;
+    font-family: inherit;
+    padding: 1rem;
+  }
+
+  .form-agreement {
+    margin: 1rem 0 0 0;
+    padding: 0 2rem;
+  }
+
+  /* Form Invalid Input Styles */
+  /* ========================= */
+
+  .form-control.error {
+    margin-bottom: -31px;
+  }
+
+  .form-control.error input {
+    width: unset;
+  }
+
+  .form-control.error small {
+    margin: 4px 5px 0 0;
+  }
+
+  /* .show-pass{
+    position: relative;
+    top:5%;
+    left: 30%;
+  } */
+  .fa-eye{
+    color: #022255;
+    cursor: pointer;
+    text-align: left !important;
+  }
+  .fa-file-text {
+    color: #edda39;
+    text-align: left !important;
+  }
+
+  .list-unstyled {
+    list-style: none;
+    text-align: left !important;
+    padding-left: 0;
+    color: black;
+  }
+  
+  /* Footer Styles */
+  /* ============= */
+
+  footer {
+    margin-top: 0;
+  }
+}
