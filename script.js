@@ -37,19 +37,19 @@ function setErrorFor(input, message) {
     formControl.className = 'form-control error';
 }
 
-$('#password').keyup(function() {
+$('#password').keyup(function () {
     var password = $('#password').val();
     if (checkStrength(password) == false) {
-        console.log("IN");
+        console.log("Add further Validation");
     }
 });
 
-function toggle(){
-    if(state){
-        document.getElementById("password").setAttribute("type","password");
+function toggle() {
+    if (state) {
+        document.getElementById("password").setAttribute("type", "password");
         state = false;
-    }else{
-        document.getElementById("password").setAttribute("type","text")
+    } else {
+        document.getElementById("password").setAttribute("type", "text")
         state = true;
     }
 }
@@ -57,9 +57,9 @@ function toggle(){
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-  }
+}
 
-function myFunction(show){
+function myFunction(show) {
     show.classList.toggle("fa-eye-slash");
 }
 
@@ -67,6 +67,7 @@ function checkStrength(password) {
     var strength = 0;
     //If password contains both lower and uppercase characters.
     if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+        strength += 1;
         $('.low-upper-case').addClass('text-success');
         $('.low-upper-case i').removeClass('fa-file-text').addClass('fa-check');
         $('#popover-password-top').addClass('hide');
@@ -78,6 +79,7 @@ function checkStrength(password) {
 
     //If it has numbers and characters.
     if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) {
+        strength += 1;
         $('.one-number').addClass('text-success');
         $('.one-number i').removeClass('fa-file-text').addClass('fa-check');
         $('#popover-password-top').addClass('hide');
@@ -90,6 +92,7 @@ function checkStrength(password) {
 
     //If it has one special character.
     if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) {
+        strength += 1;
         $('.one-special-char').addClass('text-success');
         $('.one-special-char i').removeClass('fa-file-text').addClass('fa-check');
         $('#popover-password-top').addClass('hide');
@@ -101,6 +104,7 @@ function checkStrength(password) {
     }
 
     if (password.length > 7) {
+        strength += 1;
         $('.eight-character').addClass('text-success');
         $('.eight-character i').removeClass('fa-file-text').addClass('fa-check');
         $('#popover-password-top').addClass('hide');
@@ -109,5 +113,13 @@ function checkStrength(password) {
         $('.eight-character').removeClass('text-success');
         $('.eight-character i').addClass('fa-file-text').removeClass('fa-check');
         $('#popover-password-top').removeClass('hide');
+    }
+
+    
+    if (strength < 2) {
+    } else if (strength == 2) {
+
+    } else if (strength == 4) {
+       
     }
 }
