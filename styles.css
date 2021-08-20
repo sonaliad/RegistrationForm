@@ -31,7 +31,7 @@
 }
 
 body {
-  background: url("../images/bg-intro-mobile.png"), #6B717B;
+  background: url("https://raw.githubusercontent.com/sonaliad/RegistrationForm/main/images/bg-intro-mobile.png"), #6B717B;
   background-size: cover;
   margin: 4.2rem 1.5rem 0 1.5rem;
   display: flex;
