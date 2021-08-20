@@ -239,7 +239,7 @@ footer {
 /* ============ */
 @media only screen and (min-width:961px) {
   body {
-    background: url("../images/bg-intro-desktop.png"), #6B717B;
+    background: url("https://github.com/sonaliad/RegistrationForm/blob/main/images/bg-intro-desktop.png"), #6B717B;
     height: 98vh;
     justify-content: center;
     margin: unset;
