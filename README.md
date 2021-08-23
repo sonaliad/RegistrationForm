@@ -35,7 +35,7 @@ Users should be able to:
 
 ### MY SOLUTION
 
-![Registration Form Screenshot](screenshot.png)
+![Registration Form Screenshot](Screenshot.png)
 
 - Solution URL: [Code](https://github.com/sonaliad/RegistrationForm.git)
 - Live Site URL: [Live Demo](https://sonaliad.github.io/RegistrationForm/)
@@ -57,4 +57,4 @@ Users should be able to:
 - A11Y
 
 ---
-<b><a id="fn1">1</a></b>: Colors of the button and terms & services statement meet WCAG 2 AA contrast ratio thresholds.[↩](#a1)
+<b><a id="fn1">1</a></b>: Colors of the button and terms & services statement meet WCAG 2 AA contrast ratio thresholds.
